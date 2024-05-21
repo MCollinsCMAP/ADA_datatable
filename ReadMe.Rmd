@@ -1,0 +1,175 @@
+# How to update ADA compliance data for CMAP region
+
+# Purpose
+
+-   ·Conform with requirements of IDOT agreement which include:
+
+    -   o Being regional data steward for municipal compliance with ADA
+
+# Outcome
+
+-   A machine readable database of ADA transition plan data for all 284 municipalities that assess the quality of the plans
+
+-    A digital archive of all extant transition plans in CMAP region
+
+# Process
+
+## Search for and download municipal ADA transition plans
+
+1.       Open the [ADA transition Plan Tracker](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/03%20ECR/231024_ADA%20Transition%20Plan%20Tracker.xlsx?d=w25815631b9fd40b7a2ddd52ff5405ec7&csf=1&web=1&e=RGhQRf) for a list of all municipalities in CMAP region
+
+2.       Sort Column D by \"Blanks\" to find municipalities that still need a transition plan
+
+3.       To find the transition plan, follow the steps outlined by UIC professor Yochai Eisenberg[[1]](#_ftn1)
+
+-    Conduct a Google search: \"[Municipality Name & State]\" to search for that MUNICIPALITY\'s official website. Enter \"county\" or \"township\" after MUNICIPALITY name, if applicable, to ensure the correct MUNICIPALITY.
+
+    -   To avoid tourism pages or Wikis, it may be helpful to type \'website\' along with the name or \'official website\'
+
+    -    Double-check that the website matches the correct MUNICIPALITY from the sample. Some counties and municipalities have the same name and some municipality names exist in multiple states.
+
+-   Search on their website for \"ADA Transition Plan\", \"ADA Coordinator,\" \"ADA,\" \"ADA Compliance,\" \"Americans with Disabilities\", and \"public rights of way.\"
+
+-   If nothing found through searches, browse under engineering and public works department pages. a. NOTE: Do not use time to look at Master Plans, Recreation Plans or Parks Plans.
+
+-   If nothing comes up on the MUNICIPALITY website:
+
+    -   Try a general google search for \"MUNICIPALITY name Transition plan\"
+
+-   Check eligibility-- Some MUNICIPALITYs may not have authority over roadways. Search on website in engineering or public works departments to see if maintenance or building roads is mentioned. If there is nothing about roads or pedestrian PROW on the website, mark this on the tracking log to indicate that they need to be contacted to ask if they have authority over roadways.
+
+4.       If you find a transition plan, please download the file (typically a word document or PDF) into the [CMAP Region Transition Plan folder](https://cmapil.sharepoint.com/:f:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/03%20ECR?csf=1&web=1&e=jmoqdm)
+
+-    Rename the file, \"YMD-MunicipalityName-transition
+
+5.       copy the One-drive address [[EM1]](#_msocom_1) into the [ADA Transition Plan Tracker](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/03%20ECR/231024_ADA%20Transition%20Plan%20Tracker.xlsx?d=w25815631b9fd40b7a2ddd52ff5405ec7&csf=1&web=1&e=9GZs0j)
+
+-    If no transition plan is found, denote a \"0\" in column D for the appropriate municipality
+
+6.       Include the date of your search so future follow-up doesn\'t duplicate recent work (must be in Month, Date, Year format)
+
+7.       Each search should take \~10 minutes or less.  As of 10/25/2023 there are 247 municipal searches that need to be completed (247 x 10M = 40Hours)
+
+## Read and score Transition plans using \'short audit\'
+
+1.       You will receive a list of municipalities you are responsible for evaluating. 
+
+2.       Check the [Regional ADA transition Plans folder](https://cmapil.sharepoint.com/:f:/r/sites/2021_080/Shared%20Documents/General/03%20Program%20Research/01%20Research/Regional%20ADA%20Transition%20Plans?csf=1&web=1&e=5sjJVQ) for the transition plan
+
+3.       Once the transition plan is found, open the [Transition Plan Audit Survey](https://forms.office.com/Pages/ResponsePage.aspx?id=uYWxQ9nmpUWONkwI3AqxoqvFvnobNWRFuhYpvs_xi2RUOEpUODVTQzQ3R0FZR005REE5OFZZNjBWRCQlQCN0PWcu)
+
+-    You must be logged in to your CMAP account
+
+-   o   This task takes \~30 minutes to review a longer plan.
+
+# Analyzing the survey data
+
+·         Survey data is stored in a [SharePoint Excel](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/240304_ShortAudit.xlsx?d=wec3eee3247754539ae020e788bed60a7&csf=1&web=1&e=v1srxH) on a tab titled \'raw\'
+
+o   The output of the survey is in plane language and not suitable for analysis
+
+·          Open the [ADA Regional Compliance_raw](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/02%20Data%20Collection%20for%20Dashboard/240314_ADACompliance_raw.xlsx?d=wdc1e37df683c4925a12514198de45615&csf=1&web=1&e=v2oyXM&nav=MTVfezE3Qjc2Q0ZELTRFRjctNDQ0OC1BQjBGLUM0N0Q1NDQyNTk0Q30) to find a machine readable version of the data
+
+o   The tab titled YMD_FormsAnswers pulls from the SharePoint excel and does the following transformations:
+
+§  Converts Yes to 1, No to 0
+
+§  Converts 99 from text to number
+
+o   The [tab titled \"MuniciaplAudi_machineread_cln\'](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/02%20Data%20Collection%20for%20Dashboard/240314_ADACompliance_raw.xlsx?d=wdc1e37df683c4925a12514198de45615&csf=1&web=1&e=2MONIJ&nav=MTVfezU0NzE3MTY2LTNCOUMtNENEMC1BQzEyLTc4QkZDMTAwMTg5OH0)  contains all the FormsAnswers (less the question column)
+
+§  Also includes additional columns
+
+·         \# of Government employees (full and part time) (pulls from [Census of Governments](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/03%20ECR/Analysis/240308_CensusofGovernments_IL_employment.xlsx?d=w8321e1fbcb2944339e0609eb4cee4083&csf=1&web=1&e=gNwbAk))
+
+·         Is a transition plan required
+
+·         Population from 2023 CDS ([pulls from Muni_2023_2 tab](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/02%20Data%20Collection%20for%20Dashboard/240314_ADACompliance_raw.xlsx?d=wdc1e37df683c4925a12514198de45615&csf=1&web=1&e=DSKjLP&nav=MTVfezIwMjA5QTFCLTczNkEtNDEzMi04OUQ2LUZDRENGRjQ3MkM3Mn0))
+
+·         % of the regional population for each town  - calculates population by total regional population of 8073030.
+
+·         Must manually edit several town names that appear slightly differently in different databases
+
+o   Elk Grove vs Elk Grove Village
+
+o   Mattawa
+
+o   St. Charles vs St Charles
+
+# Visualizing the survey data
+
+·         A separate document was requested that only had visualizations and the survey responses. This is referred to as the [ADA Compliance Dashboard](https://cmapil.sharepoint.com/:x:/r/sites/2021_080/Shared%20Documents/2023.013%20Community%20Transition%20planning%20approach/02%20Reports%20and%20Deliverables/02%20Deliverables/02%20Data%20Collection%20for%20Dashboard/240313_ADAComplianceDashboard.xlsx?d=w934a7773ecb545d3a1fa020b444d7a12&csf=1&web=1&e=QFp56R).
+
+o   The Charts and Municipal Responses tabs are for stakeholders to get an \'at a glance\' analysis
+
+o   There are several \'hidden\' tabs that contain the analysis of the charts
+
+# Hosted Table of ADA data
+
+To showcase the data collected in the excel, CMAP created an [HTML table that is searchable and sortable](https://cmapil.sharepoint.com/:u:/s/2021_080/ERFF9BtDPQJJnYY_iJgigHcBxSLy1qR5Je82kYXU2IdMQQ?e=6KYDKL). This table can be inserted as an [iframe into ESRI products](https://mediaspace.esri.com/media/t/1_a1n5u6mu).
+
+Skills needed:
+
+·         Novice to intermediate R scripting skills
+
+o   A Github account linked to CMAP email
+
+o   R with various packages installed
+
+o   Access to Sharepoint
+
+·         Novice knowledge of Github and its collaboration tools
+
+## How to find the R Script
+
+·         The R Script is currently hosted on CMAP Repos
+
+·         Users wishing to make edits can  request to join the project [[MC2]](#_msocom_2) 
+
+·         Clone the repository to your local machine
+
+·         Navigate to the filed titled  *ADA_DataTable_knit.Rmd*, which contains code and plain language descriptions of how the code works broken down into steps
+
+o   Reads in data from the Excel file (in this case the local copy of the SharePoint Excel)
+
+o   Uses [R tidyverse](https://www.tidyverse.org/) packages to determine:
+
+§  Which columns will be included (*select* function)
+
+§  Which rows/records will be included (*filter* function)
+
+§  Alter how fields will be displayed on the front-end or define new variables like pdf_link (*mutate* function)
+
+o   [DataTable package](https://rstudio.github.io/DT/) to create a web-friendly table
+
+§  Column names and formatting, colors, table height, scroll options are all set here
+
+o   Outputs DataTable as a standalone HTML file (index.html) so that it can be hosted on GitHub
+
+## How to update the RScript
+
+·         Once or twice a year, there may be sufficient progress in ADA compliance to warrant updating the table.
+
+·         After receiving new transition plans , [performing the audit](#_Read_and_score) and creating a [machine readable version](#_Analyzing_the_survey), \"save-as\" the excel document with the date of the most recent analysis appended \"YYYYMMDD\" to the workspace of your Rscript
+
+·          See section of *ADA_DataTable_knit.Rmd* titled \"2. Ingest Data\"
+
+·         Replace the *xlsx* file titled *ada_raw*  with the most recently updated excel output
+
+·         Run all the code chunks
+
+·         The output *index.html* is the file that should be updated and replaced on the Github repository
+
+# How to update the GitHub
+
+·         Update \"index.html\" in the repository clicking \"Upload files\" and dragging/dropping, or with [GitHub desktop](https://desktop.github.com/)
+
+o   ![Screenshot of GitHub "Upload files" interface](file:///C:/Users/mcollins/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg){alt="Screenshot of GitHub \"Upload files\" interface"}
+
+·         Check front-end updated by going to Settings\>Pages for the individual site link (in this case <https://sean-connelly-cmap.github.io/cmap_ada_transition_plans_table/>)
+
+[[1]](#_ftnref1) North Jersey Transportation Planning Authority, \"Appendix B - Mitigating Adverse  Environmental Impacts of  Transportation Improvements\" (New Jersey: North Jersey Transportation Planning Authority, November 13, 2017), <https://www.njtpa.org/NJTPA/media/Documents/Planning/Plans-Guidance/Plan-2045/Environmental-Mitigation-Appendix.pdf?ext=.pdf.>
+
+make sure available to all agency [[EM1]](#_msoanchor_1)
+
+ [[MC2]](#_msoanchor_2)Who should they ask?  Who is CMAP github owner?
